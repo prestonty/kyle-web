@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React Web</title>
+        <!-- imports react library -->
+        <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+        <!-- imports babel javascript compilter to transpile jsx into js code -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
+        <!-- PUT THE CSS CODE IN THE HEAD -->
+        <style>
+        #container {
+            padding: 50px;
+            background-color: #5CDB95;
+        }
+        #container h1 {
+            font-size: 48px;
+            font-family: sans-serif;
+            color: #05386B;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div id="container"></div>
+        <script type="text/babel">
+
+            // define a react component (basically javascript object)
+            var World = React.createClass({
+                render: function() {
+                    return (
+                        // can only return 1 element, so must have a div
+                        <div>
+                            <h1>Around the World</h1>
+                            <p>I travelled to many places with my family</p>
+                        </div>
+                    );
+                }
+            });
+
+            // call the render method that initializes the world object that calls the render function within object
+            ReactDOM.render(
+            <div>    
+                <World/>
+            </div>,
+                document.querySelector("#container")
+            );
+
+            // var mainStage = document.querySelector("#container");
+            // ReactDOM.render(
+            //     // render takes two arguments (the html element type. E.g. <h1>randomWords</h1>) and the location to put this (E.g. in the body element of html)
+            //     // can have div and inside div, unlimited elements. Very useful, can render entire sections of a website
+            //     <div>
+            //         <h1>Welcome to the World of Preston Tom-Ying</h1>
+            //     </div>,
+            //     // use the # symbol for id
+            //     mainStage // this is still the location
+            // );
+
+            
+
+        </script>
+    </body>
+
+</html>

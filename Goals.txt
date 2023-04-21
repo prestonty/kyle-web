@@ -1,0 +1,10 @@
+get most of the website done and hardcode the text into the code (make sure to write the script on the side then just copy and paste, worry about format later)
+
+once website is done, find a way to make the development process more user friendly (link the website to a google sheet and copy the cell contents over to the website so it can easily be modified)
+
+make a shit ton of components and different styles so your website doesn't get outdated or bored (switch every week or so)
+uptime robot type thing
+
+
+diabolical transition
+Welcome to the world of Preston (then slides up to Kyle), then slides up to Tom-Ying
